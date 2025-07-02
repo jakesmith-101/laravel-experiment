@@ -2,13 +2,21 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build",
+      "label": "Build: Lock",
       "type": "shell",
       "command": "docker compose -f compose.dev.yaml exec workspace bash",
       "dependsOn": "compose-up-dev",
       "group": {
-        "kind": "build",
-        "isDefault": true
+        "kind": "build"
+      }
+    },
+    {
+      "label": "Build: Migrations",
+      "type": "shell",
+      "command": "docker compose -f compose.dev.yaml exec workspace php artisan migrate",
+      "dependsOn": "compose-up-dev",
+      "group": {
+        "kind": "build"
       }
     }
   ]
