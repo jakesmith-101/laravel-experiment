@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+        "request": "launch",
+        "type": "node-terminal",
+        "name": "compose-up-dev",
+        "command": "docker compose -f compose.dev.yaml up -d",
+        "presentation": {
+            "reveal": "always",
+            "panel": "new"
+        }
+    }
+  ]
+}
