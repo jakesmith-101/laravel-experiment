@@ -1,7 +1,9 @@
-@extends('layouts.modal')
+@extends('layouts.app')
  
 @section('title', 'Register')
  
-@section('modal')
-    <p>This is my register content.</p>
+@section('content')
+    <x-modal>
+        <p>This is my register content.</p>
+    </x-modal>
 @endsection
