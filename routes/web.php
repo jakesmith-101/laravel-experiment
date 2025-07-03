@@ -15,12 +15,12 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     Log::info('Register page visited');
     return view('register');
-})
+});
 
 Route::get('/dashboard', function () {
     Log::info('Dashboard visited');
     return view('dashboard');
-})
+});
 
 Route::get('/info', function () {
     Log::info('Phpinfo page visited');
