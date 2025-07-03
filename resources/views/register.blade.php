@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.modal')
  
 @section('title', 'Register')
  
-@section('content')
+@section('modal')
     <p>This is my register content.</p>
 @endsection

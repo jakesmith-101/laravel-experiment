@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.modal')
  
 @section('title', 'Login')
  
-@section('content')
+@section('modal')
     <p>This is my login content.</p>
 @endsection
