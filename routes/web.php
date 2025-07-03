@@ -5,27 +5,27 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     Log::info('Welcome page visited');
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/login', function () {
     Log::info('Login page visited');
     return view('login');
-});
+})->name('login');
 
 Route::get('/register', function () {
     Log::info('Register page visited');
     return view('register');
-});
+})->name('register');
 
 Route::get('/dashboard', function () {
     Log::info('Dashboard visited');
     return view('dashboard');
-});
+})->name('dashboard');
 
 Route::get('/info', function () {
     Log::info('Phpinfo page visited');
     return phpinfo();
-});
+})->name('info');
 
 Route::get('/health', function () {
     $status = [];
@@ -77,4 +77,4 @@ Route::get('/health', function () {
     $httpStatus = $isHealthy ? 200 : 503;
 
     return response()->json($status, $httpStatus);
-});
+})->name('health');
