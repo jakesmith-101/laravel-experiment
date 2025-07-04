@@ -4,7 +4,7 @@
 
 @section('content')
     <x-modal>
-        <form>
+        <form action="login.post">
             <h1 class="mb-1 font-medium">Login</h1>
             <div>
                 <label for="email">Email</label>
