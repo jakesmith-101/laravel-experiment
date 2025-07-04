@@ -59,7 +59,7 @@ class AuthController extends Controller
      *
      * @return response()
      */
-    public function postRegistration(Request $request): RedirectResponse
+    public function postRegister(Request $request): RedirectResponse
     {  
         $request->validate([
             'email' => 'required|email|unique:users',
