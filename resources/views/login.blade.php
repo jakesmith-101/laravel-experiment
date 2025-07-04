@@ -8,7 +8,7 @@
             <h1 class="mb-1 font-medium">Login</h1>
             
             <div>
-                <label for="username">Username</label>
+                <label for="username">Username or Email</label>
                 <input type="text" name="username" placeholder="example@gmail.com" required>
             </div>
             <div>

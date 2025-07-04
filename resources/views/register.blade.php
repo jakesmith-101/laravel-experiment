@@ -20,10 +20,11 @@
                 <input type="password" name="password" placeholder="*****" required>
             </div>
             <div>
-                <input type="submit" name="submit" value="Sign In">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" placeholder="*****" required>
             </div>
             <div>
-                <p class="mb-2 text-[#706f6c] dark:text-[#A1A09A]">Forgot Password ? <a href="#">Click Here</a></p>
+                <input type="submit" name="submit" value="Register">
             </div>
         </form>
     </x-modal>
