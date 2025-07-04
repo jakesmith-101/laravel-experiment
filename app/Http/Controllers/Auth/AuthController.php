@@ -96,6 +96,7 @@ class AuthController extends Controller
     public function create(array $data)
     {
       return User::create([
+        'name' => substr($data['email'], 0, strpos($data['email'], "@")),
         'email' => $data['email'],
         'password' => Hash::make($data['password'])
       ]);
