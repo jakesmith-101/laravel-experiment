@@ -6,10 +6,9 @@
     <x-modal>
         <form>
             <h1 class="mb-1 font-medium">Login</h1>
-            
             <div>
-                <label for="username">Username or Email</label>
-                <input type="text" name="username" placeholder="example@gmail.com" required>
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="example@gmail.com" required>
             </div>
             <div>
                 <label for="password">Password</label>
