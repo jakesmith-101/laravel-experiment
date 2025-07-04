@@ -15,7 +15,7 @@
                 <input type="password" name="password" placeholder="*****" required>
             </div>
             <div>
-                <input type="submit" name="submit" value="Sign In">
+                <button type="submit">Sign In</button>
             </div>
             <div>
                 <p class="mb-2 text-[#706f6c] dark:text-[#A1A09A]">Forgot Password ? <a href="#">Click Here</a></p>

@@ -19,7 +19,7 @@
                 <input type="password" name="confirmPassword" placeholder="*****" required>
             </div>
             <div>
-                <input type="submit" name="submit" value="Register">
+                <button type="submit">Register</button>
             </div>
         </form>
     </x-modal>
